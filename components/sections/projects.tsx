@@ -18,31 +18,31 @@ function GithubIcon({ className }: { className?: string }) {
 
 const projects = [
   {
-    title: "[Nombre del Proyecto 1]",
+    title: "ClearBank — Digital Banking Platform",
     description:
-      "[Descripción breve del proyecto. ¿Qué problema resuelve? ¿Qué tecnologías usas?]",
-    tech: ["Next.js", "TypeScript", "Tailwind"],
-    github: "https://github.com/[tu-usuario]/[proyecto-1]",
+      "Full-stack digital banking platform built with microservices architecture. Features JWT-secured API Gateway, real-time balance management, inter-service communication via OpenFeign, and automated email notifications. Fully containerized with Docker Compose.",
+    tech: ["Angular", "Spring Boot", "PostgreSQL", "Docker", "Redis", "JWT"],
+    github: "https://github.com/Salvador-FM/clearbank-microservices",
     demo: "https://[demo-url-1]",
-    image: "/projects/project-1.png",
+    image: "/projects/clear_bank.webp",
   },
   {
-    title: "[Nombre del Proyecto 2]",
+    title: "Sistema de gestión de inventario",
     description:
-      "[Descripción breve del proyecto. ¿Qué problema resuelve? ¿Qué tecnologías usas?]",
-    tech: ["React", "NestJS", "PostgreSQL"],
-    github: "https://github.com/[tu-usuario]/[proyecto-2]",
+      "Sistema de gestión de inventario con analítica en tiempo real, Dashboard empresarial con control de stock, alertas automáticas de reabastecimiento, historial de movimientos y reportes exportables.",
+    tech: ["React", "Next.js", "NestJS", "PostgreSQL"],
+    github: "https://github.com/Salvador-FM/inventory-system",
     demo: "https://[demo-url-2]",
-    image: "/projects/project-2.png",
+    image: "/projects/in-progress.webp",
   },
   {
-    title: "[Nombre del Proyecto 3]",
+    title: "Plataforma de e-commerce",
     description:
-      "[Descripción breve del proyecto. ¿Qué problema resuelve? ¿Qué tecnologías usas?]",
-    tech: ["Angular", "Java", "MySQL"],
-    github: "https://github.com/[tu-usuario]/[proyecto-3]",
+      "Plataforma de e-commerce completa con gestión de productos, carrito de compras, procesamiento de pagos y seguimiento de pedidos.",
+    tech: ["Angular", "Node.js", "Express", "Supabase"],
+    github: "https://github.com/Salvador-FM/ecommerce-platform",
     demo: "https://[demo-url-3]",
-    image: "/projects/project-3.png",
+    image: "/projects/in-progress.webp",
   },
 ];
 
@@ -72,9 +72,11 @@ export function Projects() {
                 className="group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-card"
               >
                 <div className="relative aspect-video overflow-hidden bg-muted">
-                  <div className="absolute inset-0 flex items-center justify-center text-sm text-muted-foreground">
-                    [Imagen del proyecto]
-                  </div>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                 </div>
 
@@ -106,7 +108,7 @@ export function Projects() {
                       <GithubIcon className="mr-1.5 h-3.5 w-3.5" />
                       Código
                     </a>
-                    <a
+                    {/* <a
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -114,7 +116,7 @@ export function Projects() {
                     >
                       <ExternalLink className="mr-1.5 h-3.5 w-3.5" />
                       Demo
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </motion.div>

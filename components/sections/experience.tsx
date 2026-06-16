@@ -6,28 +6,32 @@ import { GraduationCap, Briefcase, Trophy, Lightbulb } from "lucide-react";
 
 const timeline = [
   {
+    year: "2025",
+    title: "Ingeniero en Sistemas Computacionales",
+    description:
+      "Graduado del Instituto Tecnológico de La Piedad con enfoque en desarrollo full-stack, arquitectura de software y soluciones digitales escalables.",
+    icon: GraduationCap,
+  },
+  {
     year: "2024",
-    title: "[Proyecto o logro relevante]",
-    description: "[Breve descripción del logro o proyecto destacado]",
+    title: "UrbanMind: Innovación para Ciudades Inteligentes",
+    description:
+      "Forme parte en el desarrollo de una plataforma de gestión ciudadana basada en IA, WhatsApp, Angular, Supabase y automatizaciones con n8n, presentada en InnovaTec 2024.",
     icon: Trophy,
   },
   {
-    year: "2023",
-    title: "[Experiencia profesional]",
-    description: "[Descripción de tu rol y responsabilidades en la empresa]",
-    icon: Briefcase,
-  },
-  {
     year: "2022",
-    title: "[Participación en innovación]",
-    description: "[Proyecto de innovación tecnológica o contribución destacada]",
+    title: "Construyendo Soluciones Escalables",
+    description:
+      "Participé en proyectos enfocados en componentes reutilizables, optimización de rendimiento y arquitecturas frontend mantenibles.",
     icon: Lightbulb,
   },
   {
     year: "2021",
-    title: "[Formación académica]",
-    description: "[Título universitario o formación relevante en tecnología]",
-    icon: GraduationCap,
+    title: "Primer Paso Profesional",
+    description:
+      "Inicié mi carrera profesional en Itelisoft, colaborando en equipos ágiles y adquiriendo experiencia en desarrollo web moderno.",
+    icon: Briefcase,
   },
 ];
 
@@ -54,14 +58,12 @@ export function Experience() {
             {timeline.map((item, index) => (
               <StaggerItem key={item.year}>
                 <div
-                  className={`relative flex flex-col gap-6 sm:flex-row ${
-                    index % 2 === 0 ? "sm:flex-row-reverse" : ""
-                  }`}
+                  className={`relative flex flex-col gap-6 sm:flex-row ${index % 2 === 0 ? "sm:flex-row-reverse" : ""
+                    }`}
                 >
                   <div
-                    className={`flex-1 ${
-                      index % 2 === 0 ? "sm:text-left" : "sm:text-right"
-                    }`}
+                    className={`flex-1 ${index % 2 === 0 ? "sm:text-left" : "sm:text-right"
+                      }`}
                   >
                     <div
                       className={`inline-flex items-center gap-2 rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground`}

@@ -4,12 +4,13 @@ import { SlideUp } from "@/components/motion/slide-up";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Brain, ArrowRight, Zap, Shield, BarChart3 } from "lucide-react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const impact = [
-  { icon: Zap, value: "[X]%", label: "Reducción en tiempo de respuesta" },
-  { icon: Shield, value: "[X]k+", label: "Ciudadanos potenciales" },
-  { icon: BarChart3, value: "[X]%", label: "Mejora en gestión de incidencias" },
+  { icon: Zap, value: "80%", label: "Reducción en tiempo de respuesta" },
+  { icon: Shield, value: "60M+", label: "Ciudadanos potenciales" },
+  { icon: BarChart3, value: "45%", label: "Mejora en gestión de incidencias" },
 ];
 
 export function UrbanMind() {
@@ -71,7 +72,7 @@ export function UrbanMind() {
                 </div>
 
                 <div className="mt-8 flex flex-wrap gap-2">
-                  {["Next.js", "NestJS", "PostgreSQL", "OpenAI", "WhatsApp API"].map(
+                  {["Angular", "PrimeNG", "Supabase", "n8n", "OpenAI API", "ConUnBOT"].map(
                     (tech) => (
                       <Badge key={tech} variant="outline" className="font-normal">
                         {tech}
@@ -83,9 +84,13 @@ export function UrbanMind() {
 
               <div className="flex flex-col justify-center">
                 <div className="mb-8 rounded-xl border border-border bg-muted/50 p-8">
-                  <div className="flex items-center justify-center text-sm text-muted-foreground">
-                    [Diagrama de arquitectura o captura del sistema]
-                  </div>
+                  <Image
+                    src="/dashboard_urbanmind.webp"
+                    alt="Dashboard de UrbanMind - Panel de control de participación ciudadana"
+                    width={600}
+                    height={400}
+                    className="w-full rounded-lg object-cover"
+                  />
                 </div>
 
                 <div className="grid grid-cols-3 gap-4">
@@ -104,7 +109,7 @@ export function UrbanMind() {
                   ))}
                 </div>
 
-                <a
+                {/* <a
                   href="[url-caso-estudio]"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -112,7 +117,7 @@ export function UrbanMind() {
                 >
                   Ver caso de estudio completo
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

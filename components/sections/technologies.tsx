@@ -14,7 +14,7 @@ const categories = [
   {
     title: "Backend",
     icon: Server,
-    skills: ["NestJS", "Node.js", "Java"],
+    skills: ["NestJS", "Node.js", "Spring Boot"],
   },
   {
     title: "Bases de datos",
@@ -24,7 +24,7 @@ const categories = [
   {
     title: "Herramientas",
     icon: Wrench,
-    skills: ["Docker", "Git", "Linux"],
+    skills: ["Docker", "Git", "Eslint", "Prettier"],
   },
 ];
 

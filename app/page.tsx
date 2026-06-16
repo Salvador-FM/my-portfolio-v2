@@ -17,7 +17,7 @@ export default function Home() {
         <Experience />
         <Projects />
         <UrbanMind />
-        <Blog />
+        {/* <Blog /> */}
         <Contact />
       </main>
       <Footer />

@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { buttonVariants } from "@/components/ui/button";
+import { TypewriterText } from "@/components/motion/typewriter-text";
 import { ArrowDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -46,8 +47,10 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.1, ease: [0.25, 0.4, 0.25, 1] }}
           className="text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl md:text-7xl"
         >
-          Hola, soy{" "}
-          <span className="text-muted-foreground">[Tu Nombre]</span>
+          <span>Hola, soy </span>
+          <span className="text-muted-foreground">
+            <TypewriterText text="[Salvador]" delay={0.6} speed={0.07} />
+          </span>
         </motion.h1>
 
         <motion.p

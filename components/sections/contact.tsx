@@ -26,20 +26,20 @@ const socialLinks = [
   {
     icon: Mail,
     label: "Email",
-    href: "mailto:[tu-email@ejemplo.com]",
-    display: "[tu-email@ejemplo.com]",
+    href: "mailto:salvador.fernandez0105@gmail.com",
+    display: "salvador.fernandez0105@gmail.com",
   },
   {
     icon: GithubIcon,
     label: "GitHub",
-    href: "https://github.com/[tu-usuario]",
-    display: "github.com/[tu-usuario]",
+    href: "https://github.com/Salvador-FM",
+    display: "github.com/Salvador-FM",
   },
   {
     icon: LinkedinIcon,
     label: "LinkedIn",
-    href: "https://linkedin.com/in/[tu-usuario]",
-    display: "linkedin.com/in/[tu-usuario]",
+    href: "https://www.linkedin.com/in/salvador-fm",
+    display: "linkedin.com/in/salvador-fm",
   },
 ];
 
@@ -87,7 +87,7 @@ export function Contact() {
 
             <div className="mt-8">
               <a
-                href="mailto:[tu-email@ejemplo.com]"
+                href="mailto:salvador.fernandez0105@gmail.com"
                 className={cn(buttonVariants({ size: "lg" }), "px-8")}
               >
                 Enviar email
@@ -108,7 +108,7 @@ export function Footer() {
         <Separator />
         <div className="flex flex-col items-center justify-between gap-4 pt-8 sm:flex-row">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} [Tu Nombre]. Todos los derechos
+            &copy; {new Date().getFullYear()} [Salvador Fernández]. Todos los derechos
             reservados.
           </p>
           <div className="flex items-center gap-4">

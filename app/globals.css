@@ -147,3 +147,17 @@ html {
     transform: translateY(0);
   }
 }
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter-cursor {
+  animation: blink 1s steps(1) infinite;
+}
