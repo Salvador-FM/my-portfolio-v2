@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "motion/react";
+import Image from "next/image";
 import { SlideUp } from "@/components/motion/slide-up";
 import { Stagger, StaggerItem } from "@/components/motion/stagger";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 function GithubIcon({ className }: { className?: string }) {
@@ -23,7 +23,6 @@ const projects = [
       "Full-stack digital banking platform built with microservices architecture. Features JWT-secured API Gateway, real-time balance management, inter-service communication via OpenFeign, and automated email notifications. Fully containerized with Docker Compose.",
     tech: ["Angular", "Spring Boot", "PostgreSQL", "Docker", "Redis", "JWT"],
     github: "https://github.com/Salvador-FM/clearbank-microservices",
-    demo: "https://[demo-url-1]",
     image: "/projects/clear_bank.webp",
   },
   {
@@ -32,7 +31,6 @@ const projects = [
       "Sistema de gestión de inventario con analítica en tiempo real, Dashboard empresarial con control de stock, alertas automáticas de reabastecimiento, historial de movimientos y reportes exportables.",
     tech: ["React", "Next.js", "NestJS", "PostgreSQL"],
     github: "https://github.com/Salvador-FM/inventory-system",
-    demo: "https://[demo-url-2]",
     image: "/projects/in-progress.webp",
   },
   {
@@ -41,7 +39,6 @@ const projects = [
       "Plataforma de e-commerce completa con gestión de productos, carrito de compras, procesamiento de pagos y seguimiento de pedidos.",
     tech: ["Angular", "Node.js", "Express", "Supabase"],
     github: "https://github.com/Salvador-FM/ecommerce-platform",
-    demo: "https://[demo-url-3]",
     image: "/projects/in-progress.webp",
   },
 ];
@@ -72,9 +69,11 @@ export function Projects() {
                 className="group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-card"
               >
                 <div className="relative aspect-video overflow-hidden bg-muted">
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />

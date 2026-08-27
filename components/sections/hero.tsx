@@ -28,7 +28,8 @@ export function Hero() {
       id="inicio"
       className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden px-6"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,var(--primary),transparent)] opacity-[0.03] dark:opacity-[0.06]" />
+      <div className="hero-grid absolute inset-0" aria-hidden="true" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,var(--primary),transparent)] opacity-[0.03] dark:opacity-[0.08]" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-4xl text-center">
         <motion.div
@@ -88,7 +89,7 @@ export function Hero() {
           className="mt-8 flex items-center justify-center gap-4"
         >
           <a
-            href="https://github.com/[tu-usuario]"
+            href="https://github.com/Salvador-FM"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-foreground"
@@ -97,7 +98,7 @@ export function Hero() {
             <GithubIcon className="h-5 w-5" />
           </a>
           <a
-            href="https://linkedin.com/in/[tu-usuario]"
+            href="https://www.linkedin.com/in/salvador-fm"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-foreground"
@@ -108,7 +109,9 @@ export function Hero() {
         </motion.div>
       </div>
 
-      <motion.div
+      <motion.a
+        href="#tecnologias"
+        aria-label="Ir a tecnologías"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.8 }}
@@ -120,7 +123,7 @@ export function Hero() {
         >
           <ArrowDown className="h-5 w-5 text-muted-foreground" />
         </motion.div>
-      </motion.div>
+      </motion.a>
     </section>
   );
 }

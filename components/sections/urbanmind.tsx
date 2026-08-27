@@ -2,10 +2,8 @@
 
 import { SlideUp } from "@/components/motion/slide-up";
 import { Badge } from "@/components/ui/badge";
-import { buttonVariants } from "@/components/ui/button";
-import { Brain, ArrowRight, Zap, Shield, BarChart3 } from "lucide-react";
+import { Brain, Zap, Shield, BarChart3 } from "lucide-react";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
 
 const impact = [
   { icon: Zap, value: "80%", label: "Reducción en tiempo de respuesta" },
@@ -41,10 +39,10 @@ export function UrbanMind() {
                       Problema
                     </h3>
                     <p className="text-sm leading-relaxed text-muted-foreground">
-                      Las ciudades enfrentan desafíos en la gestión de incidencias
-                      urbanas. Los ciudadanos carecen de canales efectivos para reportar
-                      problemas, y los gobiernos struggle para procesar y priorizar
-                      los reportes de manera eficiente.
+                      Las ciudades enfrentan desafíos para gestionar incidencias
+                      urbanas. Los ciudadanos necesitan canales claros para reportar
+                      problemas y los gobiernos requieren priorizar cada caso con
+                      rapidez y contexto.
                     </p>
                   </div>
 
@@ -65,8 +63,10 @@ export function UrbanMind() {
                       Arquitectura
                     </h3>
                     <p className="text-sm leading-relaxed text-muted-foreground">
-                      [Descripción de la arquitectura técnica: microservicios, APIs,
-                      infraestructura, etc. Incluir diagrama si es posible.]
+                      Una interfaz en Angular centraliza la operación; Supabase
+                      gestiona datos y autenticación. WhatsApp, n8n y la API de
+                      OpenAI automatizan la recepción, clasificación y asignación
+                      de cada reporte.
                     </p>
                   </div>
                 </div>

@@ -14,9 +14,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "[SFM] — Desarrollador Full Stack",
+  title: {
+    default: "Salvador Fernández — Desarrollador Full Stack",
+    template: "%s | Salvador Fernández",
+  },
   description:
-    "Portafolio de [Salvador Fernández], desarrollador full stack especializado en aplicaciones escalables y experiencias modernas.",
+    "Portafolio de Salvador Fernández, desarrollador full stack especializado en aplicaciones escalables y experiencias digitales modernas.",
+  openGraph: {
+    title: "Salvador Fernández — Desarrollador Full Stack",
+    description: "Aplicaciones escalables y experiencias digitales modernas.",
+    locale: "es_MX",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -31,6 +40,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
+        <a href="#contenido" className="skip-link">Saltar al contenido</a>
         <Providers>{children}</Providers>
       </body>
     </html>
