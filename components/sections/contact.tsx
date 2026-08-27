@@ -108,7 +108,7 @@ export function Footer() {
         <Separator />
         <div className="flex flex-col items-center justify-between gap-4 pt-8 sm:flex-row">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} [Salvador Fernández]. Todos los derechos
+            &copy; {new Date().getFullYear()} Salvador Fernández. Todos los derechos
             reservados.
           </p>
           <div className="flex items-center gap-4">

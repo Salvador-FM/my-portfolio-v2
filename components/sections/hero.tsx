@@ -49,7 +49,7 @@ export function Hero() {
         >
           <span>Hola, soy </span>
           <span className="text-muted-foreground">
-            <TypewriterText text="[Salvador]" delay={0.6} speed={0.07} />
+            <TypewriterText text="Salvador" delay={0.6} speed={0.07} />
           </span>
         </motion.h1>
 

@@ -55,7 +55,7 @@ export function Navbar() {
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href="#inicio" className="text-lg font-semibold tracking-tight">
-          &lt;sfm /&gt;
+          SFM
         </Link>
 
         <div className="hidden items-center gap-1 md:flex">
